@@ -1,10 +1,12 @@
 pipeline {
 	agent none
+  environment {
+    PATH = "$PATH:/usr/bin/docker"
+  }
   stages {
     stage('Docker Build') {
     	agent any
       steps {
-      	sh 'sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose'
       	sh 'docker compose -f docker-compose.yml up -d'
       }
     }
