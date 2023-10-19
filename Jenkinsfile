@@ -4,6 +4,8 @@ pipeline {
     stage('Docker Build') {
     	agent any
       steps {
+      	sh 'docker container stop cim_frontend_1'
+      	sh 'docker container prune -f'
       	sh 'docker-compose -f docker-compose.yml up -d'
       }
     }
