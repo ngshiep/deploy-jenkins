@@ -16,6 +16,7 @@ pipeline {
               echo "Container cim_frontend_1 không tồn tại hoặc đã dừng trước đó."
           }
         }
+        sh 'docker image prune -f'
       	sh 'docker container prune -f'
       	sh 'docker-compose -f docker-compose.yml up -d'
       }
