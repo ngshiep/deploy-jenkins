@@ -5,7 +5,7 @@ pipeline {
     	agent any
       steps {
       	sh 'sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose'
-      	sh 'docker-compose -f docker-compose.yml up -d'
+      	sh 'docker compose -f docker-compose.yml up -d'
       }
     }
   }
