@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Simple tailwind stater</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="h-screen bg-[#E6F0FF] pt-[38px] relative">
+      <header class="h-10 flex items-start max-w-[1110px] mx-auto flex-col">
+        <div class="flex items-center justify-between w-full">
+          <nav class="flex items-center h-full">
+            <span>
+              <img src="/assets/logo.svg" alt="logo"></img>
+            </span>
+            <ul
+              class="text-sm font-medium flex gap-7 items-center text-text2 ml-[4rem]"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- action -->
+          <div class="text-sm font-medium">
+            <a href="#" class="text-text1 mr-5"> Sign in </a>
+            <a href="#" class="text-white bg-primary py-2 px-6 rounded-lg">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="h-screen flex flex-col mt-36 max-w-[580px] flex-0">
+          <span class="text-lg font-medium text-text3">
+            Welcome to Besnik Agency
+          </span>
+
+          <span class="text-6xl font-extrabold text-text1 mt-2 leading[76px]">
+            Discover a place you'll love to live.
+          </span>
+          <p class="text-lg font-normal text-text3 mt-7 lowercase">
+            get the best real estate deals first, before they hit the mass
+            market! HOT FORECLOSURE DEALS with one simple search.
+          </p>
+          <a
+            href="#"
+            class="text-white text-sm font-medium bg-primary py-4 rounded-xl mt-10 w-[170px] text-center"
+          >
+            More About Us
+          </a>
+        </div>
+        <div class="absolute bottom-0 right-[calc((100vw-1110px)/2-100px)]">
+          <span>
+            <img src="/assets/hero_icon.svg" alt="hero icon"></img>
+          </span>
+        </div>
+      </header>
+    </div>
+    <!-- content -->
+    <main class=" w-full ">
+      <!-- info -->
+      <div class="mt-[7.5rem] max-w-[1110px]  mx-auto ">
+          <div class="flex items-center justify-between">
+            <img src="./assets//logo.svg" alt="logo"></img>
+            <img src="./assets//start.svg" alt="start"></img>
+          </div>
+          <div class="text-text2 font-medium text-base flex items-center justify-between mt-6">
+            <span>
+              More than 45,000+ companies trust besnik
+            </span>
+            <span>
+              5 Star Ratings (2k+ Review)
+            </span>
+          </div>
+          <div class="flex items-center justify-between mt-[100px]">
+            <img alt="slack logo" src="./assets/slack_logo.svg"/>
+            <img alt="slack logo" src="./assets/slack_logo.svg"/>
+            <img alt="slack logo" src="./assets/slack_logo.svg" />
+            <img alt="slack logo" src="./assets/slack_logo.svg"/>
+            <img alt="slack logo" src="./assets/slack_logo.svg"/>
+          </div>
+      </div>
+
+      <!-- how its works -->
+      <div class="mt-[200px] mb-[120px] max-w-[685px] mx-auto">
+        <p class="text-4xl font-bold text-text1 text-center relative after:content-[''] after:absolute after:h-1 after:w-10 after:bg-primary after:rounded-full after:-top-3 after:left-1/2 after:-translate-x-1/2">How its works?</p>
+        <p class="text-base font-normal leading-[2] max-w-[460px] text-center mt-5 mx-auto">
+          Everything you need to know when you're looking to buy, rent, or sell - all in one place.
+        </p>
+        <div class="mt-8">
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col gap-3 items-center">
+              <img src="/assets/buy_guides.svg" alt="buy guides" class="w-12"/>
+              <span class="text-xl font-bold text-text1 mt-3">
+                Buyer Guides
+              </span>
+              <div class="text-sm font-bold text-[#0689FF] flex items-center gap-1">
+                <span>
+                  how to buy
+                </span>
+                <img src="./assets//arrow.svg" alt="arrow"/>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 items-center">
+              <img src="/assets/renter_guides.svg" alt="buy guides" class="w-12"/>
+              <span class="text-xl font-bold text-text1 mt-3">
+                Renter Guides
+              </span>
+              <div class="text-sm font-bold text-[#0689FF] flex items-center gap-1">
+                <span>
+                  how to buy
+                </span>
+                <img src="./assets//arrow.svg" alt="arrow"/>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 items-center">
+              <img src="/assets/sell_guides.svg" alt="buy guides" class="w-12"/>
+              <span class="text-xl font-bold text-text1 mt-3">
+                Seller Guides
+              </span>
+              <div class="text-sm font-bold text-[#0689FF] flex items-center gap-1">
+                <span>
+                  how to buy
+                </span>
+                <img src="./assets//arrow.svg" alt="arrow"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-12 text-center">
+          <a
+            href="#"
+            class="text-white text-sm font-medium bg-primary py-4 px-6 rounded-xl text-center inline-block "
+          >
+          Sell Full Guidelines
+          </a>
+        </div>
+      </div>
+
+      <!-- feature -->
+      <div class="h-screen w-full bg-[#F5FAFE] flex items-center">
+        <div class="max-w-[1110px] mx-auto ">
+          <h2 class="text-4xl font-semibold inline-block">
+            Featured Properties
+          </h2>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-text2 font-medium ">Everything you need to know when you're looking</span>
+            <a href="#" class="flex items-center text-lg font-bold gap-2 text-[#0689FF]">
+              <span>View All Properties</span>
+              <img src="./assets/arrow.svg" alt="arrow">
+            </a>
+          </div>
+          <div class="flex justify-between mt-[70px] gap-7 flex-wrap">
+              <!-- Cart element -->
+              <div class="max-w-[350px] rounded-xl bg-white shadow[0_65px_80px_-46px_rgb(226,238,249,0.60)]">
+                <img src="https://images.unsplash.com/photo-1603003568133-55b07aaf1860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="department"
+                class="h-[230px] object-cover rounded-t-xl ">
+                <!--desc -->
+                <div class="flex flex-col px-5 pt-5 pb-6">
+                  <h4 class="text-xl font-bold text-text1 ">Nikko Apartments</h4>
+                  <span class="text-sm font-bold text-text3 mt-3">8502 Preston Rd. Inglewood, Maine 98280</span>
+                  <!-- info -->
+                  <div class="flex text-sm font-bold mt-5 items-center gap-6">
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/bed.svg" alt="bed">
+                      <span>5 Beds</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/both.svg" alt="both">
+                      <span>2 both</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/earea.svg" alt="earea">
+                      <span>2000 Spft</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Cart element -->
+              <div class="max-w-[350px] rounded-xl bg-white shadow[0_65px_80px_-46px_rgb(226,238,249,0.60)]">
+                <img src="https://images.unsplash.com/photo-1603003568133-55b07aaf1860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="department"
+                class="h-[230px] object-cover rounded-t-xl ">
+                <!--desc -->
+                <div class="flex flex-col px-5 pt-5 pb-6">
+                  <h4 class="text-xl font-bold text-text1 ">Nikko Apartments</h4>
+                  <span class="text-sm font-bold text-text3 mt-3">8502 Preston Rd. Inglewood, Maine 98280</span>
+                  <!-- info -->
+                  <div class="flex text-sm font-bold mt-5 items-center gap-6">
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/bed.svg" alt="bed">
+                      <span>5 Beds</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/both.svg" alt="both">
+                      <span>2 both</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/earea.svg" alt="earea">
+                      <span>2000 Spft</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cart element -->
+              <div class="max-w-[350px] rounded-xl bg-white shadow[0_65px_80px_-46px_rgb(226,238,249,0.60)]">
+                <img src="https://images.unsplash.com/photo-1603003568133-55b07aaf1860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="department"
+                class="h-[230px] object-cover rounded-t-xl ">
+                <!--desc -->
+                <div class="flex flex-col px-5 pt-5 pb-6">
+                  <h4 class="text-xl font-bold text-text1 ">Nikko Apartments</h4>
+                  <span class="text-sm font-bold text-text3 mt-3">8502 Preston Rd. Inglewood, Maine 98280</span>
+                  <!-- info -->
+                  <div class="flex text-sm font-bold mt-5 items-center gap-6">
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/bed.svg" alt="bed">
+                      <span>5 Beds</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/both.svg" alt="both">
+                      <span>2 both</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="/assets/earea.svg" alt="earea">
+                      <span>2000 Spft</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+      <!-- you've found a  -->
+      <div class="mt-[125px] max-w-[1110px] mx-auto relative h-screen">
+        <img srcset="/assets/card.png 2x" alt="card" class="absolute -top-4 left-0 z-10 shadow[90px_85px_100px_0px_rgb(0, 0, 0, 0.06)]">
+        <img src="https://images.unsplash.com/photo-1586764921681-d37bdbf9165a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="tour" class="w-[400px] h-[460px] absolute top-0 left-[120px] object-cover rounded-xl">
+      </div>
+    </main>
+  </body>
+</html>
