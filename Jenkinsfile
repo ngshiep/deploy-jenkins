@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Docker Build') {
     	agent any
-      steps {
-      	sh '/usr/local/bin/docker-compose -f docker-compose.yml up -d'
+      withEnv(["PATH=$PATH:~/.local/bin"]){
+        sh 'docker-compose -f docker-compose.yml up -d'
       }
     }
   }
