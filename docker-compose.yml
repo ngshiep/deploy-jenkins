@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        IMAGE_TAG: ${CI_COMMIT_SHA}
     image: frontend_web
     ports:
       - 80:80
