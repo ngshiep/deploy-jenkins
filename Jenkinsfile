@@ -4,7 +4,7 @@ pipeline {
     stage('Docker Build') {
     	agent any
       steps {
-      	sh 'docker-compose build --no-cache && docker-compose up --build -d'
+      	sh 'sudo docker-compose build --no-cache && sudo docker-compose up --build -d'
       }
     }
   }
