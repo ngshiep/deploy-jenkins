@@ -9,12 +9,12 @@ pipeline {
 
           if (containerExists == 0) {
               sh 'sudo docker container stop cim_frontend_1'
-              sh 'sudo docker image rm frontend_web'
+              
               echo "Stop container cim_frontend_1"
           }
         }
       	sh 'sudo docker container prune -f'
-      	sh 'sudo docker-compose --build -f docker-compose.yml up -d'
+      	sh 'sudo docker-compose build --no-cache && docker-compose up -d'
       }
     }
   }
