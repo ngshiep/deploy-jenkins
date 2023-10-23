@@ -14,7 +14,7 @@ pipeline {
           }
         }
       	sh 'sudo docker container prune -f'
-      	sh 'sudo docker-compose build --no-cache && docker-compose up -d'
+      	sh 'sudo docker-compose build --no-cache && docker-compose up --build -d'
       }
     }
   }
