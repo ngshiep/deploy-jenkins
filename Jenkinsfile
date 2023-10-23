@@ -4,16 +4,6 @@ pipeline {
     stage('Docker Build') {
     	agent any
       steps {
-        script {
-          def containerExists = sh(script: "sudo docker ps -a --format '{{.Names}}' | grep -q 'cim_frontend_1'", returnStatus: true)
-
-          if (containerExists == 0) {
-              sh 'sudo docker container stop cim_frontend_1'
-              
-              echo "Stop container cim_frontend_1"
-          }
-        }
-      	sh 'sudo docker container prune -f'
       	sh 'sudo docker-compose build --no-cache && sudo docker-compose up --build -d'
       }
     }
