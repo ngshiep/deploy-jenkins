@@ -14,7 +14,7 @@ pipeline {
         }
       	sh 'sudo docker container prune -f'
         sh 'sudo docker image rm frontend_web'
-      	sh 'sudo docker-compose --no-cache -f docker-compose.yml up -d'
+      	sh 'sudo docker-compose --build -f docker-compose.yml up -d'
       }
     }
   }
